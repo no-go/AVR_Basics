@@ -17,6 +17,15 @@ Ziel ist es, ohne Arduino IDE Chips wie atmega und attiny nur mit:
 ... zu kompilieren und zu flashen: also auf mit einem Programmer oder nur einer
 seriellen/UART Verbindung via USB deinen Code auf den Chip zu spielen.
 
+## Ordner 'unordnung_auch_assembler'
+
+Hier sind meine Anfänge drin. Darunter ist sehr viel Assembler Code für
+von mir zusammengebaute Boards ohne Anleitung des Schaltplans und vorrangig 
+den Chips Atmega8 sowie ATtiny13.
+
+Eine PDF hab ich ebenfalls gefunden, die ein wenig Erleuchtung zu einem
+c Projekt (atmega8 und usbASP) bringt.
+
 ## Crash Kurs
 
 Eine `main.c` schreiben mit Blink Code:
