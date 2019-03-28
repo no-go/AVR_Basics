@@ -82,6 +82,12 @@ avrdude -B 250 -c usbasp -p m328p -U hfuse:w:0xDA:m -U lfuse:w:0xEE:m -U efuse:w
 Das `-B 250` ist eine Art Speedangabe, die je nach USB-Kabel Qualität und Chip-Frequenz
 durchaus einer spielerischen Änderung bedarf.
 
+Und zu guter Letzt euer Programm flashen:
+
+```console
+avrdude -B 250 -c usbasp -p m328p -U flash:w:main.hex:i
+```
+
 ## Makefile
 
 Zusätzlich sind in den Makefiles von mir andere Aufrufe hinterlegt, um z.B.
