@@ -1,32 +1,15 @@
-# Prerequisites
-*.d
+programmer_usbasp/atmega328p_Blink_c/*.o
+programmer_usbasp/atmega328p_Blink_c/*.bin
+programmer_usbasp/atmega328p_Blink_c/*.hex
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+programmer_usbasp/attiny85_onOff/*.o
+programmer_usbasp/attiny85_onOff/*.bin
+programmer_usbasp/attiny85_onOff/*.hex
 
-# Precompiled Headers
-*.gch
-*.pch
+programmer_usbtiny/atmega328p_Blink_c/*.o
+programmer_usbtiny/atmega328p_Blink_c/*.bin
+programmer_usbtiny/atmega328p_Blink_c/*.hex
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+programmer_usbtiny/atmega328p_Blink_cpp/*.o
+programmer_usbtiny/atmega328p_Blink_cpp/*.bin
+programmer_usbtiny/atmega328p_Blink_cpp/*.hex
