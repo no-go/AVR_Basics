@@ -56,7 +56,7 @@ Kompilieren für den Chip atmega328p:
 avr-gcc -g -Os -Wall -mcall-prologues -mmcu=atmega328p -c main.c -o main.o
 ```
 
-Die erzeugte Objektdatei main.o Linken, damit sie eine Binary (Ausführbar für den Chip) wird:
+Die erzeugte Objektdatei main.o Linken, damit sie eine Binary (ausführbar für den Chip) wird:
 
 ```console
 avr-gcc -g -Os -Wall -mcall-prologues -mmcu=atmega328p -o main.bin main.o
@@ -87,6 +87,14 @@ Und zu guter Letzt euer Programm flashen:
 ```console
 avrdude -B 250 -c usbasp -p m328p -U flash:w:main.hex:i
 ```
+
+## Wieso -g und so?
+
+Also das `-g` ist zum Debuggen und eher dazu gedacht, im in die binary und/oder
+eine Assembler Datei (.S ?!) zu schauen, ohne verrückt zu werden, glaub ich.
+Das `-Os` bedeutet, der Code soll `size optimized` sein... also besonders klein.
+Das `-mcall-prologues` soll spezielle avr-chip Befehle bevorzugen, so dass
+der Binärcode deines Programms noch kleiner wird.
 
 ## Makefile
 
